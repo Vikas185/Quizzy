@@ -1,4 +1,5 @@
 @@ -1,71 +0,0 @@
+
 *{
     margin: 0px;
     padding: 0px;
@@ -12,14 +13,25 @@
    grid-gap: 2px;
   
 }
+.h1heading{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.font_primeary{
+    font-family: 'Roboto', sans-serif;
+}
+
 .items{
-    background-color: rgb(243, 243, 229);
-    border: 2px solid red;
+    
+    border: 2px solid transparent;
 }
 #navbar{
 grid-area: navbar;
-padding: 10px;
-text-align: center;
+padding: 0px;
+text-align: center; 
+background: linear-gradient(90deg, rgba(100,57,153,1) 0%, rgba(78,81,144,1) 25%, rgba(63,222,180,1) 100%);
+;
 }
 #navbar h1{
     align-items: center;
@@ -29,7 +41,33 @@ text-align: center;
     grid-area: aside;
     height: 110vh;
     width: 191px;
+    background: rgb(197, 241, 172);
     
+}
+.userimg_box{
+    background: rgb(26, 236, 131);
+    display: flex;
+    margin: -13px;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    height: 159px;
+    width: 194px;
+}
+.aside_setting{
+    width: 194px;
+    margin-left: 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+#user_name{
+    margin-block-start: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .aside-items{
@@ -39,20 +77,43 @@ text-align: center;
    justify-content: center;
    margin-top: 10px;
 }
+.borderround{
+    border-radius: 11px;
+}
 .aside-items a{
-    border: 2px solid black;
-    padding: 10px;
-    margin: 5px;
-    width: 100px;
+    display: flex;
+    border: 2px solid;
+    border-color: transparent;
+    padding: 10px 1px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 189px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
 } 
+.aside-items a:hover{
+    background-color: rgb(235, 99, 117);
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 8px;
+}
 #profileimg{
+    margin-top: 10px;
     border: 2px solid blueviolet;
     border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background: rgb(26, 236, 131);;
 }
 
 #section{
     grid-area: section;
-    margin-left: -150px;
+    margin-left: -181px;
+    background: skyblue;
+    opacity: 0.5;
    
 }
 .nested-section{
@@ -62,7 +123,7 @@ text-align: center;
     
 }
 .nested-section div{
-    border: 2px solid green;
+    border: 2px solid transparent;
     padding: 10px;
     margin: 0px;
 }

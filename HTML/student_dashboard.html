@@ -6,26 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/student_dashboard.css">
-    <title>MainPage</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Student Dashboard </title>
 
 </head>
 
-<body>
-    <div class="container">
-        <nav class="items" id="navbar"><h1>Welcome To Quizzy</h1></nav>
-        <aside class="items" id="aside">
-            <div class="aside-items">
-                <img src="/images/profile pic.jpg" id="profileimg">
-                <h3>username</h3>
-                <a href="#">userinfo</a>
-                <a href="#">testhistory</a>
-                <a href="#">Logout</a>
+<body style="
+background: linear-gradient(#c2f791, #9198e5);">
+    <div class="container ">
+        <nav class="items h1heading borderround" id="navbar">
+            <h1>Welcome To Quizzy</h1>
+        </nav>
+        <aside class="items borderround" id="aside">
+            <div class="aside-items font_primary borderround">
+                <div class="userimg_box borderround">
+                    <img src="/images/user_img.png" id="profileimg">
+                    <h3 id="user_name">user_name</h3>
+                </div>
+                <div class="aside_setting">
+
+                    <a href="#">User Info</a>
+                    <a href="#">Test History</a>
+                    <a href="login.html">Logout</a>
+                </div>
             </div>
         </aside>
-        <div class="items" id="section">
-            <div class="nested-section">
-                <div id="stats"></div>
-                <div id="upcomingquiz"></div>
+        <div class="items borderround" id="section">
+            <div class="nested-section borderround">
+                <div class="borderround" id="stats"></div>
+                <div class="borderround" id="upcomingquiz"></div>
             </div>
         </div>
 
