@@ -16,7 +16,8 @@
         height: 20%;
         width: 30%; 
         margin: auto;
-        margin-top: 10%;
+        /*margin-top: 10%;*/
+        margin-top: 45px;
         justify-content: center;
     }
     
