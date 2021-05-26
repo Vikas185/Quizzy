@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/student_dashboard.css">
+    <link rel="stylesheet" href="/CSS/student_info.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <title>Student Dashboard </title>
+    <title>Student Info </title>
 
 </head>
 
 <body style="
 background: linear-gradient(#c2f791, #9198e5);">
-    <div class="container ">
+   
+   <div class="container ">
         <nav class="items h1heading borderround" id="navbar">
-            <h1>Welcome To Quizzy</h1>
+            <h1>Welcome to info section </h1>
         </nav>
+        
         <aside class="items borderround" id="aside">
             <div class="aside-items font_primary borderround">
                 <div class="userimg_box borderround">
@@ -25,24 +27,46 @@ background: linear-gradient(#c2f791, #9198e5);">
                     <h3 id="user_name">user_name</h3>
                 </div>
                 <div class="aside_setting">
-                     
-                   
-                      <!--  home page -->
-                    <a href="student_dashboard.html">Home</a>
-                     <!-- added link to student_info page-->
-                    <a href="student_info.html">User Info</a>
+                    <a href="student_dashboard.html"> Home</a>
+                    <a href="#">User Info</a>
                     <a href="#">Test History</a>
                     <a href="login.html">Logout</a>
                 </div>
             </div>
         </aside>
+        
+        <!-- edit information code goes ..here --> 
+
+        <center>
+            <div class="box"></div>
+            <img src="/images/user_img.png" id="profileimg">
+            <input type="file" name=""  id="file" accept="image/*">
+            <input type="text" name="" placeholder="User Name">
+            <input type="email" name="" placeholder="Email ID">
+            <input type="text" name="" placeholder="Phone Number">
+            <input type="text" name="" placeholder="Date of Birth">
+            <input type="text" name="" placeholder="Gender">
+            <input type="text" name="" placeholder="College Name">
+            <button class="btn" >Cancel</button>
+            <button class="btn" >Update</button>
+             
+      </div> </center>
+        <div class="box">
+           
         <div class="items borderround" id="section">
             <div class="nested-section borderround">
                 <div class="borderround" id="stats"></div>
                 <div class="borderround" id="upcomingquiz"></div>
             </div>
         </div>
+
+
     </div>
+    <!-- edit information code here -->
+     
+         
+     
+
 
 </body>
 
